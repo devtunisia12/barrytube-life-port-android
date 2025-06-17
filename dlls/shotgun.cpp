@@ -55,8 +55,6 @@ void CShotgun::Spawn()
 
 void CShotgun::Precache( void )
 {
-	PRECACHE_MODEL("models/v_kick.mdl");
-	PRECACHE_MODEL("models/v_intro.mdl");
 	PRECACHE_MODEL( "models/v_shotgun.mdl" );
 	PRECACHE_MODEL( "models/w_shotgun.mdl" );
 	PRECACHE_MODEL( "models/p_shotgun.mdl" );

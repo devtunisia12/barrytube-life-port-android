@@ -54,8 +54,6 @@ void CHANDS::Spawn()
 
 void CHANDS::Precache(void)
 {
-	PRECACHE_MODEL("models/v_kick.mdl");
-	PRECACHE_MODEL("models/v_intro.mdl");
 	PRECACHE_MODEL("models/v_hands.mdl");
 	PRECACHE_MODEL("models/w_hands.mdl");
 	PRECACHE_MODEL("models/p_hands.mdl");

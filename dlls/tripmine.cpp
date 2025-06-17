@@ -505,6 +505,11 @@ void CTripmine::PrimaryAttack( void )
 	m_flTimeWeaponIdle = UTIL_WeaponTimeBase() + UTIL_SharedRandomFloat( m_pPlayer->random_seed, 10, 15 );
 }
 
+void CTripmine::SecondaryAttack()
+{
+	Kick();
+}
+
 void CTripmine::WeaponIdle( void )
 {
 	pev->body = 0;

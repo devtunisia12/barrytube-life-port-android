@@ -43,7 +43,7 @@ enum crowbar_e
 void CUsb4k::Spawn()
 {
 	Precache();
-	m_iId = WEAPON_CROWBAR;
+	m_iId = WEAPON_USB4K;
 	SET_MODEL( ENT( pev ), "models/w_usb4k.mdl" );
 	m_iClip = -1;
 
@@ -52,8 +52,6 @@ void CUsb4k::Spawn()
 
 void CUsb4k::Precache( void )
 {
-	PRECACHE_MODEL("models/v_kick.mdl");
-	PRECACHE_MODEL("models/v_intro.mdl");
 	PRECACHE_MODEL( "models/v_usb4k.mdl" );
 	PRECACHE_MODEL( "models/w_usb4k.mdl" );
 	PRECACHE_MODEL( "models/p_usb4k.mdl" );
@@ -75,8 +73,8 @@ int CUsb4k::GetItemInfo( ItemInfo *p )
 	p->pszAmmo2 = NULL;
 	p->iMaxAmmo2 = -1;
 	p->iMaxClip = WEAPON_NOCLIP;
-	p->iSlot = 5;
-	p->iPosition = 0;
+	p->iSlot = 0;
+	p->iPosition = 2;
 	p->iId = WEAPON_USB4K;
 	p->iWeight = USB4K_WEIGHT;
 	return 1;
